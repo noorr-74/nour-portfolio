@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>Nour Hany | Backend &amp; Full Stack Developer</title>
+  <meta name="description" content="Computer Science student focused on backend and full stack development, building practical software with C#, .NET, Python, and modern web technologies.">
+  <meta name="author" content="Nour Hany">
+  <meta name="theme-color" content="#08060f">
+  <meta name="color-scheme" content="dark light">
+
+  <!-- Open Graph / social sharing.
+       REPLACE "YOUR-SITE.vercel.app" with your real Vercel domain after the first deploy
+       (social networks need an absolute URL for the preview image). -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nour Hany | Backend &amp; Full Stack Developer">
+  <meta property="og:description" content="Computer Science student focused on backend and full stack development, building practical software with C#, .NET, Python, and modern web technologies.">
+  <meta property="og:image" content="https://YOUR-SITE.vercel.app/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nour Hany, Backend and Full Stack Developer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nour Hany | Backend &amp; Full Stack Developer">
+  <meta name="twitter:description" content="Computer Science student focused on backend and full stack development, building practical software with C#, .NET, Python, and modern web technologies.">
+  <meta name="twitter:image" content="https://YOUR-SITE.vercel.app/assets/img/og-image.png">
+
+  <!-- Favicons -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Self-hosted fonts (no third-party requests) -->
+  <link rel="preload" href="assets/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <!-- Apply the saved theme before first paint (prevents a flash). Dark is the default. -->
+  <script>
+    (function () {
+      var root = document.documentElement;
+      try { root.dataset.theme = localStorage.getItem('theme') === 'light' ? 'light' : 'dark'; } catch (e) {}
+      root.classList.add('js');
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nour Hany",
+    "jobTitle": "Computer Science Student & Backend Developer",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Ain Shams University" },
+    "sameAs": [
+      "https://github.com/noorr-74",
+      "https://www.linkedin.com/in/noorrhany22/",
+      "https://codeforces.com/profile/noorr74"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="Nour Hany, back to top">
+        <img class="brand__mark" src="favicon.svg" width="36" height="36" alt="">
+        <span class="brand__name">Nour Hany</span>
+      </a>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#skills">Skills</a></li>
+        <li><a class="nav__link" href="#projects">Projects</a></li>
+        <li><a class="nav__link" href="#experience">Experience</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme">
+          <span class="i-sun" data-icon="sun"></span><span class="i-moon" data-icon="moon"></span>
+        </button>
+        <a class="btn btn--primary btn--sm nav__cta" data-cv="view" href="assets/cv/Nour_Hany_CV.pdf" target="_blank" rel="noopener">View CV</a>
+        <button class="icon-btn nav__toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <span id="nav-toggle-icon" data-icon="menu"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero__inner" id="hero-root"></div>
+      <noscript>
+        <div class="container noscript">
+          <h1>Nour Hany</h1>
+          <p>Computer Science student and backend developer.</p>
+          <p>This site uses JavaScript for its interactive sections. You can still reach me by
+            <a href="mailto:nourhanyhanafy2005@gmail.com">email</a>,
+            <a href="https://github.com/noorr-74">GitHub</a>,
+            <a href="https://www.linkedin.com/in/noorrhany22/">LinkedIn</a>,
+            or <a href="assets/cv/Nour_Hany_CV.pdf">view my CV</a>.</p>
+        </div>
+      </noscript>
+      <a class="hero__scroll" href="#about" aria-label="Scroll down to the About section"><span data-icon="arrow-down"></span></a>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <h2 class="section__title" id="about-title">About me</h2>
+        </header>
+        <div id="about-root"></div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <h2 class="section__title" id="skills-title">Skills</h2>
+          <p class="section__lead">The languages, frameworks and tools I work with.</p>
+        </header>
+        <div id="skills-root"></div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <h2 class="section__title" id="projects-title">Projects</h2>
+          <p class="section__lead">Things I have built while learning. Open a project for the full details.</p>
+        </header>
+        <div id="projects-root"></div>
+      </div>
+    </section>
+
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container journey__layout">
+        <header class="section__head journey__head reveal">
+          <h2 class="section__title" id="experience-title">Experience and education</h2>
+          <p class="section__lead">Where I study, what I have trained on, and where I have taught.</p>
+        </header>
+        <div id="timeline-root"></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <h2 class="section__title" id="contact-title">Contact</h2>
+        </header>
+        <div id="contact-root"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer-root"></footer>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top"><span data-icon="arrow-up"></span></button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog class="modal" id="project-dialog" aria-labelledby="project-dialog-title"></dialog>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
